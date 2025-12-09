@@ -17,7 +17,7 @@ const About: React.FC = () => {
             >
               <img 
                 src="https://picsum.photos/800/1200?random=2" 
-                alt="Pedro Profile" 
+                alt="Pedro Lichtnow Perfil" 
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 ease-in-out transform hover:scale-105"
               />
             </motion.div>
@@ -33,26 +33,26 @@ const About: React.FC = () => {
             className="order-1 md:order-2"
           >
             <h3 className="text-white text-3xl md:text-5xl font-serif italic mb-6">
-              Expansão da <br /> <span className="not-italic font-sans font-light">Consciência</span>
+              Sobre o <br /> <span className="not-italic font-sans font-light">Autor</span>
             </h3>
             <div className="space-y-6 text-neutral-400 font-light leading-relaxed text-lg">
               <p>
-                A união entre a ciência e a espiritualidade é a chave para o verdadeiro desenvolvimento humano. Como Neurocomunicador e estudioso da Física Quântica, busco desvendar os mecanismos da mente e da realidade.
+                <strong>Pedro Lichtnow</strong> é autor e atua ativamente na cena cultural local. Sua escrita busca explorar reflexões profundas sobre a condição humana e o cotidiano.
               </p>
               <p>
-                Minha missão é guiar pessoas através de uma jornada existencialista, proporcionando ferramentas para que cada indivíduo reconheça seu potencial criador e transforme sua própria realidade.
+                Recentemente, foi convidado a integrar a <strong>3ª Coletânea "O Pensador"</strong>, organizada pela Academia de Cultura de Curitiba (ACCUR). Sua participação na obra, com texto assinado, consolida seu compromisso com a literatura e o fomento cultural na região.
+              </p>
+              <p>
+                Pedro participa de eventos literários, lançamentos e encontros acadêmicos, mantendo um diálogo constante com leitores e outros autores contemporâneos.
               </p>
             </div>
 
-            <div className="mt-12 flex space-x-12">
-              <div>
-                <span className="block text-4xl text-white font-light">10+</span>
-                <span className="text-sm text-neutral-500 uppercase tracking-widest">Anos de Estudo</span>
-              </div>
-              <div>
-                <span className="block text-4xl text-white font-light">∞</span>
-                <span className="text-sm text-neutral-500 uppercase tracking-widest">Possibilidades</span>
-              </div>
+            <div className="mt-12 pt-8 border-t border-white/10">
+              <span className="block text-white font-medium mb-2">Afiliações e Participações</span>
+              <ul className="text-neutral-500 text-sm space-y-2">
+                <li>• Autor Participante — 3ª Coletânea O Pensador (ACCUR)</li>
+                <li>• Pesquisador e Colaborador Cultural</li>
+              </ul>
             </div>
           </motion.div>
 

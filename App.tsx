@@ -3,7 +3,8 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import Hero from './components/Hero';
 import About from './components/About';
 import Services from './components/Services';
-import Testimonials from './components/Testimonials';
+import News from './components/News';
+import InstagramFeed from './components/InstagramFeed';
 import Footer from './components/Footer';
 import CustomCursor from './components/CustomCursor';
 import Navbar from './components/Navbar';
@@ -44,10 +45,12 @@ const App: React.FC = () => {
 
       <main className="relative z-10">
         <Hero />
+        <News /> {/* Moved News (Launch Event) up as it is the priority */}
         <About />
-        <Services />
-        <Testimonials />
-        <section className="py-32 relative flex items-center justify-center">
+        <Services /> {/* Now "Works" */}
+        <InstagramFeed />
+        
+        <section className="py-32 relative flex items-center justify-center" id="contact">
             <div className="absolute inset-0 bg-gradient-to-t from-dark via-transparent to-transparent pointer-events-none" />
             <div className="container mx-auto px-6 text-center">
               <motion.h2 
@@ -56,16 +59,18 @@ const App: React.FC = () => {
                 viewport={{ once: true }}
                 className="text-4xl md:text-6xl font-serif italic mb-8"
               >
-                Vamos criar algo <br/> <span className="text-white not-italic font-sans font-light tracking-tighter">extraordinário?</span>
+                Entre em <br/> <span className="text-white not-italic font-sans font-light tracking-tighter">Contato</span>
               </motion.h2>
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="group relative px-8 py-4 bg-white text-dark rounded-full font-medium tracking-wide overflow-hidden"
-              >
-                <span className="relative z-10">Entrar em Contato</span>
-                <div className="absolute inset-0 bg-neutral-200 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300" />
-              </motion.button>
+              <div className="flex flex-col md:flex-row justify-center gap-6">
+                 <motion.button
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="group relative px-8 py-4 bg-white text-dark rounded-full font-medium tracking-wide overflow-hidden"
+                  >
+                    <span className="relative z-10">Enviar Mensagem</span>
+                    <div className="absolute inset-0 bg-neutral-200 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300" />
+                  </motion.button>
+              </div>
             </div>
         </section>
       </main>

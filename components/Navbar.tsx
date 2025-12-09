@@ -15,7 +15,8 @@ const Navbar: React.FC = () => {
       
       <div className="hidden md:flex space-x-8 text-sm tracking-widest uppercase opacity-80">
         <a href="#about" className="hover:opacity-100 transition-opacity clickable">Sobre</a>
-        <a href="#services" className="hover:opacity-100 transition-opacity clickable">Serviços</a>
+        <a href="#works" className="hover:opacity-100 transition-opacity clickable">Obras</a>
+        <a href="#news" className="hover:opacity-100 transition-opacity clickable">Lançamento</a>
         <a href="#contact" className="hover:opacity-100 transition-opacity clickable">Contato</a>
       </div>
 

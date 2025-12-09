@@ -14,13 +14,13 @@ const Hero: React.FC = () => {
         style={{ y: y1 }}
         className="absolute inset-0 z-0"
       >
-        <div className="absolute inset-0 bg-dark/40 z-10" /> {/* Overlay */}
+        <div className="absolute inset-0 bg-dark/60 z-10" /> {/* Overlay escuro para elegância */}
         <img 
           src="https://picsum.photos/1920/1080?grayscale" 
-          alt="Background Aesthetic" 
-          className="w-full h-full object-cover object-center opacity-60"
+          alt="Pedro Lichtnow Background" 
+          className="w-full h-full object-cover object-center opacity-50"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-dark/20 via-transparent to-dark z-20" />
+        <div className="absolute inset-0 bg-gradient-to-b from-dark/30 via-transparent to-dark z-20" />
       </motion.div>
 
       <div className="container mx-auto px-6 relative z-30 text-center">
@@ -30,7 +30,7 @@ const Hero: React.FC = () => {
           transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
         >
           <h2 className="text-sm md:text-base uppercase tracking-[0.2em] text-neutral-400 mb-6">
-            Autor | Palestrante Existencialista
+            Autor Participante | 3ª Coletânea O Pensador
           </h2>
           <h1 className="text-6xl md:text-8xl lg:text-9xl font-light tracking-tighter text-white mb-8 mix-blend-overlay">
             PEDRO <br className="md:hidden" />
@@ -43,12 +43,26 @@ const Hero: React.FC = () => {
             transition={{ duration: 1, delay: 0.8 }}
             className="max-w-3xl mx-auto text-neutral-300 text-lg md:text-xl font-light leading-relaxed"
           >
-            <span className="block md:inline">Neurocomunicador</span>
+            <span className="block md:inline">Literatura</span>
             <span className="hidden md:inline mx-2">•</span>
-            <span className="block md:inline">Física Quântica</span>
+            <span className="block md:inline">Cultura</span>
             <span className="hidden md:inline mx-2">•</span>
-            <span className="block md:inline">Especialista em Consciência e Desenvolvimento Humano</span>
+            <span className="block md:inline">Academia de Cultura de Curitiba (ACCUR)</span>
           </motion.p>
+
+          <motion.div
+             initial={{ opacity: 0 }}
+             animate={{ opacity: 1 }}
+             transition={{ duration: 1, delay: 1.2 }}
+             className="mt-10"
+          >
+            <a 
+              href="#news" 
+              className="inline-block px-8 py-3 border border-white/20 rounded-full text-white text-sm uppercase tracking-widest hover:bg-white hover:text-dark transition-all duration-300"
+            >
+              Ver Detalhes do Lançamento
+            </a>
+          </motion.div>
         </motion.div>
       </div>
 

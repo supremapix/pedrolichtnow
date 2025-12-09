@@ -3,7 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pedro Lichtnow | Consciência e Desenvolvimento</title>
+    
+    <!-- SEO Meta Tags -->
+    <title>Pedro Lichtnow | Autor & 3ª Coletânea O Pensador</title>
+    <meta name="description" content="Site oficial de Pedro Lichtnow, autor participante da 3ª Coletânea O Pensador (ACCUR). Saiba mais sobre o lançamento no Solar do Rosário.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pedrolichtnow.com.br/">
+    <meta property="og:title" content="Lançamento da 3ª Coletânea 'O Pensador' - Pedro Lichtnow">
+    <meta property="og:description" content="Participe do lançamento da obra literária no Espaço Cultural Solar do Rosário, Curitiba. Dia 15 de Dezembro.">
+    <meta property="og:image" content="https://picsum.photos/1200/630?grayscale">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Pedro Lichtnow | Lançamento Literário ACCUR">
+    <meta property="twitter:description" content="Lançamento da 3ª Coletânea O Pensador. Dia 15/12 no Solar do Rosário.">
+
+    <link rel="canonical" href="https://pedrolichtnow.com.br/" />
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,6 +53,50 @@
           scrollbar-width: none;  /* Firefox */
       }
     </style>
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "name": "Pedro Lichtnow",
+          "jobTitle": "Autor Participante",
+          "url": "https://pedrolichtnow.com.br",
+          "sameAs": ["https://www.instagram.com/pedrolichtnow"],
+          "description": "Autor participante da 3ª Coletânea O Pensador (Academia de Cultura de Curitiba)."
+        },
+        {
+          "@type": "Event",
+          "name": "Lançamento da 3ª Coletânea O Pensador",
+          "startDate": "2023-12-15T17:30",
+          "eventStatus": "https://schema.org/EventScheduled",
+          "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+          "location": {
+            "@type": "Place",
+            "name": "Espaço Cultural Solar do Rosário",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Rua Lourenço Pinto, 500",
+              "addressLocality": "Curitiba",
+              "postalCode": "80010-160",
+              "addressRegion": "PR",
+              "addressCountry": "BR"
+            }
+          },
+          "image": ["https://picsum.photos/seed/booklaunch2/800/1000"],
+          "description": "Lançamento oficial da 3ª Coletânea O Pensador, organizada pela Academia de Cultura de Curitiba (ACCUR). Evento aberto ao público.",
+          "organizer": {
+            "@type": "Organization",
+            "name": "Academia de Cultura de Curitiba (ACCUR)",
+            "url": "https://accur.com.br"
+          }
+        }
+      ]
+    }
+    </script>
+
   <script type="importmap">
 {
   "imports": {
